@@ -1,0 +1,170 @@
+/*======Resets======*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url("/images/pattern-background-desktop.svg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: var(--paleblue);
+     
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+button{
+    border: none;
+    padding: .75em;
+    border-radius: .5em;
+    font-size: .75em;
+}
+
+/*======Variables======*/
+
+:root{
+    --verypaleblue: hsl(225, 100%, 94%);
+    --paleblue: hsl(225, 100%, 94%);
+    --brightblue: hsl(245, 75%, 52%);
+    --darkblue: hsl(223, 47%, 23%);
+    --desaturatedblue: hsl(224, 23%, 55%);
+}
+
+/*======Action======*/
+
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.position {
+    margin: auto;
+}
+
+.card{
+    background-color: white;
+    border-radius: 1em;
+    max-width: 350px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 10px -5px, rgba(0, 0, 0, 0.3) 0px 8px 10px -8px;
+}
+
+.hero-img > img{
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+}
+
+.card-padding{
+    padding: 2.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.hero-copy{
+    text-align: center;
+    font-size: .8em;
+    font-weight: 500;
+    color: var(--desaturatedblue);
+}
+
+.hero-copy > h1{
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--darkblue);
+    margin-bottom: .5em;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    background-color: rgba(248,249,255,255);
+    padding: 1em;
+    border-radius: .75em;
+}
+
+.price > img{
+    height: 35px;
+}
+
+.price > a {
+    font-size: .75em;
+    font-weight: 700;
+    margin-left: auto;
+}
+
+.price > a:hover{
+    opacity: .75;
+}
+
+.price-information{
+    font-size: .8em;
+    margin-left: 1em;
+}
+
+.price-top{
+    color: var(--darkblue);
+    font-weight: 900;
+}
+
+.price-bottom{
+    color: var(--desaturatedblue);
+    font-weight: 500;
+}
+
+.cta-button {
+    background-color: var(--brightblue);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 10px -5px, rgba(0, 0, 0, 0.3) 0px 8px 10px -8px;
+}
+
+.cta-button:hover{
+    opacity: .75;
+}
+
+.cancel{
+    text-align: center;
+}
+
+.cancel-button{
+    font-size: .75em;
+    font-weight: 900;
+    color: var(--desaturatedblue);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cancel-button:hover{
+    color: var(--darkblue);
+}
